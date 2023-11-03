@@ -1,6 +1,6 @@
 # List of results of the commands
 
-1. **[list](https://zapodaj.net/plik-QcUif4rSit)** `node index.js --action list`
+1. **[list](https://zapodaj.net/images/c14deb3e882d1.png)** `node index.js --action list`
 
 2. **[get](https://zapodaj.net/images/c3f40514036ed.png)** `node index.js --action get --id 05olLMgyVQdWRwgKfg5J6`
 
