@@ -1,12 +1,12 @@
 import { Command } from "commander";
 const program = new Command();
 
-const {
+import {
   listContacts,
   getContactById,
   removeContact,
   addContact,
-} = require("./contacts.js");
+} from "./contacts.js";
 
 program
   .option("-a, --action <type>", "choose action")
@@ -28,17 +28,17 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 
     case "get":
       const contactById = await getContactById(id);
-      console.table([contactById]);
+      console.table(contactById);
       break;
 
     case "add":
       const newContact = await addContact(name, email, phone);
-      console.table([newContact]);
+      console.table(newContact);
       break;
 
     case "remove":
       const removedContact = await removeContact(id);
-      console.table([removedContact]);
+      console.table(removedContact);
       break;
 
     default:
